@@ -1,0 +1,451 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body, a {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  color: #444240;
+  line-height: 21px;
+  background-color: #FFFFFF;
+}
+
+h2 {
+  font-family: 'Playfair Display';
+  font-size: 32px;
+  line-height: 43px;
+  color: #1B1A17;
+}
+
+.page-header {
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FDFDFB;
+  padding: 0 100px;
+}
+
+.section-popular {
+  height: 700px;
+}
+
+.wrapper {
+  max-width: 1366px;
+  margin: auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: Playfair Display, sans-serif;
+  color: #555248;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.main-nav-list {
+  display: flex;
+  margin-top: auto;
+}
+
+.main-nav-item {
+  margin-right: 65px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.navigation-item:last-child {
+  margin: 0;
+}
+
+.user-nav {
+  display: flex;
+}
+
+.user-nav-item {
+  margin-right: 23px;
+}
+
+.user-nav-item:last-child {
+  margin: 0;
+}
+
+.section-main {
+  height: 768px;
+  background: 
+    url(../img/watch_main.png) no-repeat 662px top,
+    #FDFDFB url(../img/ellipse-main.svg) no-repeat 469px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 185px;
+}
+
+.header-main {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 30px;
+  line-height: 40px;
+  color: #1B1A17;
+}
+
+.header-main::before {
+  content: "";
+  display: block;
+  position: relative;
+  top: 35px;
+  right: 65px;
+  width: 50px;
+  height: 0px;
+
+  border: 1px solid #8B8371;
+}
+
+.header-main span {
+  font-size: 45px;
+  line-height: 60px;
+}
+
+.section-main p {
+  display: block;
+  width: 270px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  margin-top: 40px;
+}
+
+.pseudo-1::after {
+  content: "22 000 ₽";
+  font-family: 'Prata';
+  font-size: 16px;
+  line-height: 22px;
+  display: block;
+  position: relative;
+  bottom: 380px;
+  left: 400px;
+}
+
+.pseudo-1::before {
+  content: "";
+  display: block;
+  position: relative;
+  bottom: 370px;
+  left: 485px;
+  width: 50px;
+  height: 0px;
+
+  border: 1px solid #8B8371;
+}
+
+.pseudo-2::after {
+  content: "28 мм диаметр";
+  font-family: 'Prata';
+  font-size: 16px;
+  line-height: 22px;
+  display: block;
+  position: relative;
+  top: 100px;
+  left: 950px;
+}
+
+.pseudo-2::before {
+  content: "";
+  display: block;
+  position: relative;
+  top: 110px;
+  left: 885px;
+  width: 50px;
+  height: 0px;
+
+  border: 1px solid #8B8371;
+}
+
+.link-button {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  width: fit-content;
+  padding: 26px 38px;
+}
+
+.link-button-dark {
+  margin-top: 64px;
+  background-color: #444240;
+  color: #FFFFFF;
+}
+
+.section-popular h2 {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.section-popular a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  display: block;
+  text-align: end;
+}
+
+.popular-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 100px;
+}
+
+.popular-list-item {
+  display: block;
+  background: #FDFDFB ;
+  width: 310px;
+  height: 410px;
+  padding: 30px;
+}
+
+.popular-list-item img {
+  background: url(../img/ellipse-watch.svg) no-repeat center;
+}
+
+.popular-list-item h3 {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(27, 26, 23, 0.82);
+  margin: 10px auto auto 10px;
+}
+
+.popular-list-item p {
+  font-family: 'Prata', sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: rgba(27, 26, 23, 0.82);
+  margin: 10px auto auto 10px;
+}
+
+.popular-list-item a {
+  text-align: left;
+  margin-left: 50px;
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  color: #1B1A17;
+}
+
+.popular-list-item a::before {
+  display: block;
+  position: relative;
+  top: 13px;
+  right: 50px;
+  content: "";
+  width: 30px;
+  height: 0px;
+
+  border: 1px solid #8B8371;  
+}
+
+.section-gallery {
+  height: 468px;
+  background: 
+    url(../img/gallery-1.svg) no-repeat right top,
+    url(../img/gallery-2.svg) no-repeat right bottom,
+    linear-gradient(
+      to right,
+      #F7F5EF 0%,
+      #F7F5EF 34%,
+      #FDFDFB 34%,
+      #FDFDFB 100%
+  );
+  padding-top: 52px;
+  display: flex;
+}
+
+.slider {
+  margin-left: 177px;
+}
+
+.slider-nav {
+  margin-top: 15px;
+  margin-left: 370px;
+  display: flex;
+}
+
+.slider-nav p {
+  font-family: 'Prata';
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(27, 26, 23, 0.82);
+  margin: 0 20px;
+  vertical-align: middle;
+}
+
+.nav-button {
+  border: 0; 
+  background: transparent;
+}
+
+.button-prev {
+  background: url(../img/arrow_left.svg) no-repeat center;
+}
+
+.button-next {
+  background: url(../img/arrow_right.svg) no-repeat center;
+}
+
+.gallery-block {
+  margin-left: 70px;
+  padding-top: 88px;
+}
+
+.gallery-block p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 40px;
+  width: 380px;
+}
+
+.link-button-light {
+  background: #D4B098;
+  color: #FFFFFF;
+  margin-top: 45px;
+}
+
+.section-social {
+  height: 460px;
+  padding: 90px 97px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.social-gallery {
+  display: grid;
+  grid-template-columns: 242px 377px;
+  gap: 10px;
+}
+
+.social-gallery-photo-2 {
+  grid-row: span 2;
+}
+
+.social-content h2 {
+  margin-top: 140px;
+  margin-bottom: 30px;
+}
+
+.social-content p {
+  width: 380px;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.social-content p b {
+  color: #262421;
+  font-weight: 700;
+}
+
+.social-links-list {
+  width: 93px;
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-footer {
+  height: 140px;
+  background: #444240;
+  color: #FFFFFF;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 67px 182px;
+}
+
+.page-footer a {
+  background-color: #444240;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.contacts a {
+  display: block;
+  background-color: inherit;
+  margin-bottom: 15px;
+}
+
+a.logo-footer {
+  font-family: 'Playfair Display';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.14em;
+  color: #FFFFFF;
+  margin-bottom: 23px;
+}
+
+.page-footer h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
